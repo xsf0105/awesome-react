@@ -11,7 +11,7 @@ export function nav(state = initNavList, action) {
     switch (action.type) {
         case 'RECEIVE_NAV':
             return {
-                ...state,   //三个点是展开符
+                ...state,
                 navMain: action.navMain
             }
 
