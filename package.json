@@ -2,7 +2,7 @@
   "name": "awsome-react",
   "version": "1.0.0",
   "description": "awsome-react",
-  "main": "./src/entry.js",
+  "main": "./src/index.js",
   "homepage": "",
   "author": "allan2coder",
   "license": "MIT",
