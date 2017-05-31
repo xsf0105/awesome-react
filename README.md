@@ -12,8 +12,8 @@
 You should clone the repo and install the dependencies, and then npm start.That is all.
 
 ```bash
-$ git clone https://github.com/allan2coder/awsome-react.git
-$ cd awsome-react
+$ git clone https://github.com/allan2coder/awesome-react.git
+$ cd awesome-react
 $ npm install
 ```
 Then launch the project app.
