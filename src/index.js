@@ -1,34 +1,53 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import { createLogger } from 'redux-logger';
+import thunk from 'redux-thunk';
+import reducer from './reducers';
+// import Routes from './routes';
+import Route from './config/route';
 
-import { Provider } from 'react-redux';	// 20170527
-import { Router } from 'react-router'
-
-import App from './components/app'
-import './styles/app.scss'
 import { AppContainer } from 'react-hot-loader'
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const render = Component => {
-  ReactDOM.render(
-    <AppContainer>
-      <Component />
-    </AppContainer>,
-    document.getElementById('main')
-  )
+import './styles/app.scss'
+
+const middleware = [ thunk ]
+if (process.env.NODE_ENV !== 'production') {
+  middleware.push(createLogger())
 }
 
-render(App)
+const store = createStore(
+  reducer,
+  applyMiddleware(...middleware)
+)
 
-// if (module.hot) {
-//   module.hot.accept('./components/app', () => {
-//   	const NewRoot = require('pages/routes').default;
-//   	render(
-//   		<NewRoot / >,
-//   		document.getElementById('main')
-//   	)
-//   })
+// const render = Component => {
+//   ReactDOM.render(
+//   	<Provider store={store}>
+//   		<Router>
+// 	        <AppContainer>
+// 	          	<Component />
+// 	        </AppContainer>
+// 	    </Router>
+//     </Provider>,
+//     document.getElementById('main')
+//   )
 // }
 
-if (module.hot) {
-  module.hot.accept('./components/app', () => { render(App) })
-}
+// render(Routes)
+
+// if (module.hot) {
+//   module.hot.accept('./components/app', () => { render(App) })
+// }
+
+/* I think the way is fine */
+ReactDOM.render(
+  <Provider store={store}>
+  	<Router>
+    	{Route}
+    </Router>
+  </Provider>,
+  document.getElementById('main')
+);
