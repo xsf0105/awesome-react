@@ -12,8 +12,9 @@ import Navbar from './components/Header/Navbar'
 class App extends Component {
     render() {
         let layout = ''
+        // this.props.children表示组件的所有子节点
         const childrenWithProps = React.Children.map(this.props.children,
-            (child) => cloneElement(child, {
+            (child) => cloneElement(child, {   // cloneElement给所有子元素添加属性
                 actions: this.props.actions,
                 results: this.props.results
             })
@@ -25,9 +26,20 @@ class App extends Component {
             layout = <div className='container'>
                 {childrenWithProps}
             </div>
-        } else if (pathname === '/topics/new'){
+        }else if (pathname === '/topics/new'){
             layout = <div>
                 {childrenWithProps}
+            </div>
+        }else {
+            layout = <div className='container'>
+                <div className='row margin-xs'>
+                    <div className='col-md-9 no-padding-xs'>
+                        {childrenWithProps}
+                    </div>
+                    <div className='col-md-3 no-padding-xs'>
+                        <Promote />
+                    </div>
+                </div>
             </div>
         }
 

@@ -1,14 +1,17 @@
 import React from 'react'
-import { Link, Router, Route, IndexRoute, Redirect } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 import App from '../App'
+import Home from '../containers/Home'
 import Topics from '../containers/Topics'
 import Jobs from '../containers/Jobs'
 import Remote from '../containers/Remote'
 
+// https://stackoverflow.com/questions/42748727/using-react-indexroute-in-react-router-v4/42751770
 const RouteConfig = (
   <main>
       <Route path="/" component={App} />
+      <Route path="/" component={Home} />
       <Route path="/topics" component={Topics} />
       <Route path="/jobs" component={Jobs} />
       <Route path="/remote" component={Remote} />
