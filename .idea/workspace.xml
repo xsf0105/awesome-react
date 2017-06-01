@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ade77820-a19f-41f5-a969-809cf94ac7eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/nav.scss" afterPath="$PROJECT_DIR$/src/components/Header/nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/route.js" afterPath="$PROJECT_DIR$/src/config/route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/index.js" afterPath="$PROJECT_DIR$/src/containers/Home/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -116,7 +112,7 @@
             <entry file="file://$PROJECT_DIR$/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="741">
-                  <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="32" />
+                  <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#43#108#0" expanded="true" />
@@ -183,8 +179,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="427" />
-    <option name="y" value="44" />
+    <option name="x" value="309" />
+    <option name="y" value="21" />
     <option name="width" value="1660" />
     <option name="height" value="989" />
   </component>
@@ -376,12 +372,12 @@
       <updated>1496195156602</updated>
       <workItem from="1496195158131" duration="788000" />
       <workItem from="1496236477763" duration="7388000" />
-      <workItem from="1496279715048" duration="8156000" />
+      <workItem from="1496279715048" duration="8760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16332000" />
+    <option name="totallyTimeSpent" value="16936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -393,7 +389,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="427" y="44" width="1660" height="989" extended-state="0" />
+    <frame x="309" y="21" width="1660" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10604192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -780,7 +776,7 @@
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
-          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="32" />
+          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#108#0" expanded="true" />

@@ -37,7 +37,7 @@ class App extends Component {
                         {childrenWithProps}
                     </div>
                     <div className='col-md-3 no-padding-xs'>
-                        <Promote />
+                        
                     </div>
                 </div>
             </div>
