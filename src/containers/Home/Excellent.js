@@ -2,10 +2,11 @@
  * Created by Allan on 2017/6/1.
  */
 
-import React, { Component } from 'react';
-import Lists from './List';
+import React, { Component, PropTypes } from 'react'
+import { connect } from 'react-redux'
+import Lists from './List'
 
-export default class Topics extends Component {
+class Topics extends Component {
     render() {
         const length = this.props.topics.length
         return (
@@ -25,3 +26,9 @@ export default class Topics extends Component {
         );
     }
 }
+
+const mapDispatchToProps = dispatch => ({
+    actions: bindActionCreators(actions, dispatch)
+})
+
+export default connect(mapDispatchToProps)(Topics);
