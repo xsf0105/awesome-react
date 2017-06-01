@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import DropdownMenu from './DropdownMenu';
+import DropdownMenu from './DropdownMenu';
 import classname from 'classnames';
 import { Link, NavLink } from 'react-router-dom';
 import './nav.scss';
@@ -69,7 +69,7 @@ export default class Navbar extends Component {
                                 </li>
                                 <li><a href="https://gems.ruby-china.org/" target='_blank'>Gems</a></li>
                             </ul>
-
+                            <DropdownMenu onClick={this.handleClick.bind(this)}></DropdownMenu>
                         </div>
                     </div>
                 </nav>

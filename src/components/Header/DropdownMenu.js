@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 import classname from 'classnames';
-import {Link} from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
     constructor(props) {
