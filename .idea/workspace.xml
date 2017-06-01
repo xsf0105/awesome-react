@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ade77820-a19f-41f5-a969-809cf94ac7eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/Index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/ListItems.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/ListItems.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Home/ToperNav.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/nav.css" afterPath="$PROJECT_DIR$/src/components/Header/nav.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/nav.css.map" afterPath="$PROJECT_DIR$/src/components/Header/nav.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/Excellent.js" afterPath="$PROJECT_DIR$/src/containers/Home/Excellent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home/index.js" afterPath="$PROJECT_DIR$/src/containers/Home/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -177,9 +169,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="427" />
+    <option name="x" value="267" />
+    <option name="y" value="97" />
     <option name="width" value="1474" />
-    <option name="height" value="1047" />
+    <option name="height" value="779" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -352,6 +345,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ade77820-a19f-41f5-a969-809cf94ac7eb" name="Default" comment="" />
@@ -362,12 +358,12 @@
       <workItem from="1496195158131" duration="788000" />
       <workItem from="1496236477763" duration="7388000" />
       <workItem from="1496279715048" duration="22114000" />
-      <workItem from="1496327364173" duration="2492000" />
+      <workItem from="1496327364173" duration="2604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32782000" />
+    <option name="totallyTimeSpent" value="32894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,7 +375,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="427" y="0" width="1474" height="1047" extended-state="0" />
+    <frame x="267" y="97" width="1474" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13927576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -403,6 +399,14 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
