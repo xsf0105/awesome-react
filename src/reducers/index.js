@@ -17,7 +17,7 @@ import { combineReducers } from 'redux'
 import {
   TOPIC,
   TOPICS
-} from '../Action'
+} from '../action'
 
 const postsByReddit = (state={}, action) => {
   switch (action.type) {

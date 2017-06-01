@@ -5,12 +5,11 @@
 import React, { Component, PropTypes, cloneElement } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import * as actions from './action'
-import Navbar from './Components/Header/Navbar';
+import * as actions from './action/index'
+import Navbar from './components/Header/Navbar'
 //import Footer from './Component/Footer';
 
 class App extends Component {
-
     render() {
         let layout = ''
         const childrenWithProps = React.Children.map(this.props.children,

@@ -42,7 +42,7 @@ const store = createStore(
 //   module.hot.accept('./components/app', () => { render(App) })
 // }
 
-/* I think the way is fine */
+/* I think this way is better */
 ReactDOM.render(
   <Provider store={store}>
   	<Router>

@@ -10,6 +10,7 @@ console.log("当前运行环境：", isPro ? 'production' : 'development')
 
 module.exports = {
   devtool: 'source-map',
+
   entry: [
     'babel-polyfill',
     'react-hot-loader/patch',
