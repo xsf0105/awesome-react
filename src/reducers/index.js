@@ -14,10 +14,7 @@
 // export default rootReducer;
 
 import { combineReducers } from 'redux'
-import {
-  TOPIC,
-  TOPICS
-} from '../action'
+import { TOPIC, TOPICS } from '../action'
 
 const postsByReddit = (state={}, action) => {
   switch (action.type) {
