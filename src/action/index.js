@@ -23,7 +23,7 @@ const received = (type, json) => {
 }
 
 export const fetchTopics = options => (dispatch) => {
-  console.log(options)
+  console.log(options,2333)
   const type = 'TOPICS'
   let url = `${BASIC_URL}/topics`
   let node = ''

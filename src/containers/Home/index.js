@@ -16,8 +16,8 @@ class Home extends Component {
     render() {
         return (
             <div className='home-wrap container'>
-              <ToperNav />
-              <ListItems></ListItems>
+                <ToperNav />
+                <Excellent />
             </div>
         );
     }

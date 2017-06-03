@@ -16,7 +16,15 @@
 import { combineReducers } from 'redux'
 import { TOPIC, TOPICS } from '../action'
 
-const postsByReddit = (state={}, action) => {
+const postsByReddit = (state={
+  selectedTab: 'all',
+  tabData: {
+    isFetching: false,
+    page: 0,
+    scrollT: 0,
+    topics: []
+  }
+}, action) => {
   switch (action.type) {
     case TOPICS:
       return {
