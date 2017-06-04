@@ -1,5 +1,5 @@
 /**
- * Created by Allan on 2017/6/1.
+ * Created by Allan on 2017/6/4.
  */
 import React, { Component } from 'react';
 import {Format} from '../Format';
@@ -36,4 +36,3 @@ export default class TopicInfo extends Component {
         );
     }
 }
-

@@ -1,5 +1,5 @@
 /**
- * Created by Allan on 2017/6/1.
+ * Created by Allan on 2017/6/4.
  */
 const Format = {}
 Format.date = function (time) {
@@ -19,4 +19,3 @@ function pluralize (time, label) {
 }
 
 export {Format}
-

@@ -2,7 +2,6 @@
  * Created by Allan on 2017/6/1.
  */
 import React, { Component } from 'react'
-
 import { Link } from 'react-router-dom'
 import TopicInfo from './TopicInfo'
 import './lists.scss'
@@ -10,7 +9,6 @@ import './lists.scss'
 export default class Topics extends Component {
 
     render() {
-        console.log(this.props.topics,2444455)
         let listItems = this.props.topics.map(function (topic) {
             return (
                 <div className="media topic" key={topic.id}>
@@ -30,7 +28,6 @@ export default class Topics extends Component {
         });
 
         const length = this.props.topics.length
-        // console.log(length)
         
         return (
             <div className='panel panel-default no-margin-bottom-xs topic-lists reset-panel-xs'>
@@ -40,7 +37,12 @@ export default class Topics extends Component {
                 <div className='row reset-row-xs'>
                     <div className='col-md-6'>
                         <div className='panel-body'>
-                            { listItems }
+                            { listItems.slice(0, length/2) }
+                        </div>
+                    </div>
+                    <div className='col-md-6'>
+                        <div className='panel-body'>
+                            { listItems.slice(length/2, length) }
                         </div>
                     </div>
                 </div>
