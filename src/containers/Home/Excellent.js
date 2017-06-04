@@ -3,13 +3,14 @@
  */
 import React, { Component } from 'react'
 
-import {Link} from 'react-router'
+import { Link } from 'react-router-dom'
 import TopicInfo from './TopicInfo'
 import './lists.scss'
 
 export default class Topics extends Component {
+
     render() {
-        // console.log(this.props.topics,2444455)
+        console.log(this.props.topics,2444455)
         let listItems = this.props.topics.map(function (topic) {
             return (
                 <div className="media topic" key={topic.id}>
@@ -20,7 +21,6 @@ export default class Topics extends Component {
                         <Link to={`/topics/${topic.id}`} className='title'>{topic.title}</Link>
                         {topic.excellent && <span ref='data' className='glyphicon glyphicon-heart left' title='精华帖'></span>}
                         <TopicInfo topic={topic}></TopicInfo>
-
                     </div>
                     <div className='media-right count'>
                         <span className='badge'>{topic.replies_count}</span>

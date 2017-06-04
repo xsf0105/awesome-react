@@ -20,7 +20,7 @@ class Home extends Component {
         return (
             <div className='home-wrap container'>
                 <ToperNav />
-                <Excellent topics={this.props.results.topics} />
+                <Excellent topics={this.props.topics} />
             </div>
         );
     }
@@ -84,9 +84,7 @@ const mapStateToProps = state => {
     }
 
     return {
-        results: {
-            topics
-        }
+        topics
     }
 }
 
