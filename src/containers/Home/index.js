@@ -11,13 +11,13 @@ import './home.scss'
 import './Index.scss'
 
 class Home extends Component {
-
     constructor(props) {
         super(props);
+        console.log(1)
         this.props.actions.fetchTopics({type: 'excellent'})
     }
-
     render() {
+        console.log(2)
         return (
             <div className='home-wrap container'>
                 <ToperNav />
@@ -29,11 +29,11 @@ class Home extends Component {
 
 // 哪些 Redux 全局的 state 是我们组件想要通过 props 获取的？
 const mapStateToProps = state => {
+    console.log(3)
     const { postsByReddit } = state // state 中的 postsByReddit 取出来作为一个常量
     let topics = [],
         results = postsByReddit['results']
     if (results)  topics = results.topics
-
     return {
         topics
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect, Switch } from 'react-router-dom'
 
 import Navbar from '../components/Header/Navbar'
 
@@ -13,11 +13,13 @@ import Remote from '../containers/Remote'
 const RouteConfig = (
   <main>
       <Navbar />
-      {/*<Route path="/" component={App} />*/}
-      <Route exact path="/" component={Home} />
-      <Route path="/topics" path="/topics/:id" component={Topics} />
-      <Route path="/jobs" component={Jobs} />
-      <Route path="/remote" component={Remote} />
+      <Switch>
+          {/*<Route path="/" component={App} />*/}
+          <Route exact path="/" component={Home} />
+          <Route path="/topics/:id" component={Topics} />
+          <Route path="/jobs" component={Jobs} />
+          <Route path="/remote" component={Remote} />
+      </Switch>
   </main>
 )
 
