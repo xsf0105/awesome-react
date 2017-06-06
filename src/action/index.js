@@ -24,7 +24,7 @@ const received = (type, json) => {
 
 //  创建一个被绑定的action创建函数来自动dispatch
 export const fetchTopics = options => (dispatch) => {
-  // console.log(options,"action:fetchTopics")
+  console.log(options,"action:fetchTopics")
 
   // const type ='TOPICS'
   let url = `${BASIC_URL}/topics`
@@ -73,4 +73,12 @@ export const fetchTopic = id => dispatch => {
         )
       })
   })
+}
+
+export const addText = book => dispatch => {
+  console.log(11)
+  return {
+    type: 'BOOK_SELECTED',
+    payload: book
+  }
 }

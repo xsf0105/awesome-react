@@ -13,14 +13,30 @@ import './Index.scss'
 class Home extends Component {
     constructor(props) {
         super(props);
-        console.log(1)
-        this.props.actions.fetchTopics({type: 'excellent'})
+        // this.props.actions.addText(1111)
     }
+
+    componentDidMount() {
+        this.props.actions.fetchTopics({type: 'excellent'})
+        // this.props.actions.addText({title: '《西游记》', pages: 101})
+    }
+
     render() {
-        console.log(2)
+        console.log(this.props.books,23)
         return (
             <div className='home-wrap container'>
                 <ToperNav />
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+                <button onClick={() => this.props.actions.addText({title: '《西游记》', pages: 101})}>点击触发action</button>
+                <div>
+                    {this.props.books}
+                </div>
+
+
                 <Excellent topics={this.props.topics} />
             </div>
         );
@@ -29,13 +45,24 @@ class Home extends Component {
 
 // 哪些 Redux 全局的 state 是我们组件想要通过 props 获取的？
 const mapStateToProps = state => {
-    console.log(3)
-    const { postsByReddit } = state // state 中的 postsByReddit 取出来作为一个常量
+
+    const { postsByReddit, addText } = state // state 中的 postsByReddit 取出来作为一个常量
     let topics = [],
         results = postsByReddit['results']
+
     if (results)  topics = results.topics
+
+
+    // let testDate = addText['results']
+    //     console.log(addText['results'], 9)
+    //     let results2 = addText['results']
+    //     let testDate = results2
+
+    console.log(addText, 4444)
+
     return {
-        topics
+        topics,
+        books: addText
     }
 }
 
@@ -43,12 +70,27 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(actions, dispatch)
 })
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Home);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function mapDispatchToProps(dispatch) {
 //     return {
 //         actions: bindActionCreators(actions, dispatch)
 //     };
 // }
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Home);

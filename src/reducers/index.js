@@ -23,9 +23,28 @@ const postsByReddit = (state={}, action) => {
   }
 }
 
+
+
+
+
+const addText = (state={}, action) => {
+  switch(action.type) {
+    case 'BOOK_SELECTED':
+      return action.payload;
+  }
+  return state;
+}
+
+
+
+
+
+
+
 // 注册reducer，每个自定义的reducer都要来这里注册！！！
 const rootReducer = combineReducers({
-  postsByReddit
+  postsByReddit,
+  addText
 })
 
 export default rootReducer
