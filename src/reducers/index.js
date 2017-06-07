@@ -28,12 +28,13 @@ const postsByReddit = (state={}, action) => {
 
 
 const addText = (state=[], action) => {
+    console.log(action)
   switch(action.type) {
     case 'BOOK_SELECTED':
-      return action.payload;
+      return action.text;
   }
   return state;
-}
+};
 
 
 

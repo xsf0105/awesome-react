@@ -2,6 +2,8 @@ export const BASIC_URL = 'https://ruby-china.org/api/v3'
 export const TOPICS = 'TOPICS'
 export const TOPIC = 'TOPIC'
 
+export const TEST_ACTION = 'TEST_ACTION';
+
 const received = (type, json) => {
   switch (type) {
     case 'TOPICS':
@@ -75,10 +77,17 @@ export const fetchTopic = id => dispatch => {
   })
 }
 
-export const addText = book => dispatch => {
-  console.log(11)
+export function testAction() {
+    return {
+        type: 'TEST_ACTION',
+        text: 'Build my first Redux app'
+    };
+}
+
+
+export const add = book => dispatch => {
   return {
-    type: 'BOOK_SELECTED',
-    payload: book
+      type: 'BOOK_SELECTED',
+      text: 'Build my first Redux app'
   }
 }

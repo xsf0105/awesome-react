@@ -11,14 +11,23 @@ import './home.scss'
 import './Index.scss'
 
 class Home extends Component {
+
     constructor(props) {
         super(props);
         // this.props.actions.addText(1111)
+        this.handleTestButtonClick= this.handleTestButtonClick.bind(this);
     }
 
     componentDidMount() {
         this.props.actions.fetchTopics({type: 'excellent'})
-        // this.props.actions.addText({title: '《西游记》', pages: 101})
+        // action 执行的事情
+        this.props.actions.testAction()
+    }
+
+    handleTestButtonClick() {
+        console.log(this.props,5)
+        const { dispatch } = this.props;
+        this.props.actions.testAction();
     }
 
     render() {
@@ -31,11 +40,11 @@ class Home extends Component {
                 <br/>
                 <br/>
 
-                <button onClick={() => this.props.actions.addText({title: '《西游记》', pages: 101})}>点击触发action</button>
+                <button onClick={() => this.props.actions.add({title: '《西游记》', pages: 101})}>点击触发action</button>
+                <button onClick={ this.handleTestButtonClick }>点击触发action2222222</button>
                 <div>
-                    {this.props.books}
+                    {this.props.books}cgdfsgfvdsfgdfdes
                 </div>
-
 
                 <Excellent topics={this.props.topics} />
             </div>
@@ -45,20 +54,14 @@ class Home extends Component {
 
 // 哪些 Redux 全局的 state 是我们组件想要通过 props 获取的？
 const mapStateToProps = state => {
-    // state 中的 postsByReddit 取出来作为一个常量
+    // state 中的 postsByReddit 取出来作为一个常量，来源于reducers!!!
     const { postsByReddit, addText } = state
+    console.log(state, postsByReddit, addText, 1);
+
     let topics = [],
         results = postsByReddit['results']
 
     if (results)  topics = results.topics
-
-
-    // let testDate = addText['results']
-    //     console.log(addText['results'], 9)
-    //     let results2 = addText['results']
-    //     let testDate = results2
-
-    console.log(addText, 4444)
 
     return {
         topics,
