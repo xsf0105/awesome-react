@@ -45,8 +45,8 @@ class Home extends Component {
 
 // 哪些 Redux 全局的 state 是我们组件想要通过 props 获取的？
 const mapStateToProps = state => {
-
-    const { postsByReddit, addText } = state // state 中的 postsByReddit 取出来作为一个常量
+    // state 中的 postsByReddit 取出来作为一个常量
+    const { postsByReddit, addText } = state
     let topics = [],
         results = postsByReddit['results']
 

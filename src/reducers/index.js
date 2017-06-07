@@ -27,7 +27,7 @@ const postsByReddit = (state={}, action) => {
 
 
 
-const addText = (state={}, action) => {
+const addText = (state=[], action) => {
   switch(action.type) {
     case 'BOOK_SELECTED':
       return action.payload;
