@@ -14,36 +14,33 @@ class Home extends Component {
 
     constructor(props) {
         super(props);
-        // this.props.actions.addText(1111)
+        this.props.actions.fetchTopics({type: 'excellent'})
         this.handleTestButtonClick= this.handleTestButtonClick.bind(this);
     }
 
     componentDidMount() {
-        this.props.actions.fetchTopics({type: 'excellent'})
         // action 执行的事情
-        this.props.actions.testAction()
+        // this.props.actions.testAction()
     }
 
     handleTestButtonClick() {
-        console.log(this.props,5)
         const { dispatch } = this.props;
-        this.props.actions.testAction();
+        this.props.actions.testAction2();
     }
 
     render() {
-        console.log(this.props.books,23)
         return (
             <div className='home-wrap container'>
                 <ToperNav />
+
                 <br/>
                 <br/>
                 <br/>
                 <br/>
 
-                <button onClick={() => this.props.actions.add({title: '《西游记》', pages: 101})}>点击触发action</button>
                 <button onClick={ this.handleTestButtonClick }>点击触发action2222222</button>
                 <div>
-                    {this.props.books}cgdfsgfvdsfgdfdes
+                    有: {this.props.text}
                 </div>
 
                 <Excellent topics={this.props.topics} />
@@ -56,16 +53,15 @@ class Home extends Component {
 const mapStateToProps = state => {
     // state 中的 postsByReddit 取出来作为一个常量，来源于reducers!!!
     const { postsByReddit, addText } = state
-    console.log(state, postsByReddit, addText, 1);
+
 
     let topics = [],
         results = postsByReddit['results']
-
     if (results)  topics = results.topics
 
     return {
         topics,
-        books: addText
+        text: addText
     }
 }
 

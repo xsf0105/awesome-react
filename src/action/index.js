@@ -3,6 +3,7 @@ export const TOPICS = 'TOPICS'
 export const TOPIC = 'TOPIC'
 
 export const TEST_ACTION = 'TEST_ACTION';
+export const TEST_ACTION2 = 'TEST_ACTION2';
 
 const received = (type, json) => {
   switch (type) {
@@ -52,6 +53,7 @@ export const fetchTopics = options => (dispatch) => {
     )
 }
 
+
 export const fetchTopic = id => dispatch => {
   // console.log(options,"action:fetchTopic")
 
@@ -79,15 +81,14 @@ export const fetchTopic = id => dispatch => {
 
 export function testAction() {
     return {
-        type: 'TEST_ACTION',
-        text: 'Build my first Redux app'
+        type: TEST_ACTION,
+        text: '测试一'
     };
 }
 
-
-export const add = book => dispatch => {
-  return {
-      type: 'BOOK_SELECTED',
-      text: 'Build my first Redux app'
-  }
+export function testAction2() {
+    return {
+        type: TEST_ACTION2,
+        text: 'Build my first Redux app'
+    };
 }
