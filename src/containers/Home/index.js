@@ -54,7 +54,6 @@ const mapStateToProps = state => {
     // state 中的 postsByReddit 取出来作为一个常量，来源于reducers!!!
     const { postsByReddit, addText } = state
 
-
     let topics = [],
         results = postsByReddit['results']
     if (results)  topics = results.topics
