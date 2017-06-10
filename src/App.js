@@ -22,7 +22,6 @@ class App extends Component {
         )
 
         let pathname = this.props.location.pathname
-        console.log(pathname,233)
 
         if (pathname === '/programmer' || pathname==='/'){  // 首页的布局
             layout = <div className='container'>

@@ -27,8 +27,6 @@ const received = (type, json) => {
 
 //  创建一个被绑定的action创建函数来自动dispatch
 export const fetchTopics = options => (dispatch) => {
-  console.log(options,"action:fetchTopics")
-
   // const type ='TOPICS'
   let url = `${BASIC_URL}/topics`
   let node = ''
@@ -53,10 +51,7 @@ export const fetchTopics = options => (dispatch) => {
     )
 }
 
-
 export const fetchTopic = id => dispatch => {
-  // console.log(options,"action:fetchTopic")
-
   // const type = 'TOPIC'
   const results = {'topic': {}, 'replies': []};
 
@@ -77,18 +72,4 @@ export const fetchTopic = id => dispatch => {
         )
       })
   })
-}
-
-export function testAction() {
-    return {
-        type: TEST_ACTION,
-        text: '测试一'
-    };
-}
-
-export function testAction2() {
-    return {
-        type: TEST_ACTION2,
-        text: 'Build my first Redux app'
-    };
 }
