@@ -2,7 +2,6 @@ import { combineReducers } from 'redux'
 import { TOPIC, TOPICS } from '../action'
 
 const postsByReddit = (state={}, action) => {
-  console.log(action,8)
   switch (action.type) {
     case TOPICS:
       return {
