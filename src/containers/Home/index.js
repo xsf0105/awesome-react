@@ -15,34 +15,13 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.props.actions.fetchTopics({type: 'excellent'})
-        this.handleTestButtonClick= this.handleTestButtonClick.bind(this);
-    }
-
-    componentDidMount() {
-        // action 执行的事情
-        // this.props.actions.testAction()
-    }
-
-    handleTestButtonClick() {
-        const { dispatch } = this.props;
-        this.props.actions.testAction2();
+        console.log("parent")
     }
 
     render() {
         return (
             <div className='home-wrap container'>
                 <ToperNav />
-
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-
-                <button onClick={ this.handleTestButtonClick }>点击触发action2222222</button>
-                <div>
-                    有: {this.props.text}
-                </div>
-
                 <Excellent topics={this.props.topics} />
             </div>
         );

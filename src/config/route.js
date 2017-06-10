@@ -13,13 +13,11 @@ import Remote from '../containers/Remote'
 const RouteConfig = (
   <main>
       <Navbar />
-      <Switch>
-          {/*<Route path="/" component={App} />*/}
-          <Route exact path="/" component={Home} />
-          <Route path="/topics/:id" component={Topics} />
-          <Route path="/jobs" component={Jobs} />
-          <Route path="/remote" component={Remote} />
-      </Switch>
+      <Route path="/" component={App} />
+      <Route exact path="/" component={Home} />
+      <Route path="/topics/:id" component={Topics} />
+      <Route path="/jobs" component={Jobs} />
+      <Route path="/remote" component={Remote} />
   </main>
 )
 
