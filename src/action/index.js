@@ -39,8 +39,6 @@ export const fetchTopics = options => (dispatch) => {
     url = `${BASIC_URL}/topics?${node}&limit=${options.limit||20}&type=${options.type||'last_actived'}&offset=${options.offset||0}`
   }
 
-  // console.log('url', url)
-
   return fetch(url)
     .then(
         response => response.json()

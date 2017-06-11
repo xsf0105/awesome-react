@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE2"
+        on line 48 of Markdown.scss
+
+43: .markdown blockquote {
+44:     margin: 0 18px 15px 18px;
+45:     padding: 0;
+46:     padding-left: 32px;
+47:     border: 0px;
+48:     quotes: "“" "”" "‘" "’";
+49:     position: relative;
+50:     line-height: 1.45
+51: }
+52: 
+53: .markdown blockquote p {
+
+Backtrace:
+Markdown.scss:48
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/util.rb:1302:in `rescue in block in find_encoding_error'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/util.rb:1297:in `block in find_encoding_error'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each_with_index'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/util.rb:1296:in `find_encoding_error'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/util.rb:905:in `check_sass_encoding'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:436:in `check_encoding!'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:392:in `_to_tree'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+D:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+D:/Ruby193/bin/scss:23:in `load'
+D:/Ruby193/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE2\"\A         on line 48 of Markdown.scss\A \A 43: .markdown blockquote {\A 44:     margin: 0 18px 15px 18px;\A 45:     padding: 0;\A 46:     padding-left: 32px;\A 47:     border: 0px;\A 48:     quotes: \"“\" \"”\" \"‘\" \"’\";\A 49:     position: relative;\A 50:     line-height: 1.45\A 51: }\A 52: \A 53: .markdown blockquote p {"; }
