@@ -8,6 +8,7 @@ import Navbar from '../components/Header/Navbar'
 import App from '../App'
 import Home from '../containers/Home'
 import Topics from '../containers/Topics'
+import Topic from '../containers/Topic';
 import Jobs from '../containers/Jobs'
 import Remote from '../containers/Remote'
 
@@ -17,7 +18,9 @@ const RouteConfig = (
       <Navbar />
       <Route path="/" component={App} />
       <Route exact path="/" component={Home} />
-      <Route path="/topics/:id" component={Topics} />
+      <Route path="topics" component={Topics} />
+      <Route path="/topics/:id" component={Topic} />
+      
       <Route path="/jobs" component={Jobs} />
       <Route path="/remote" component={Remote} />
   </main>

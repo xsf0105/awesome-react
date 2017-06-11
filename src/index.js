@@ -18,11 +18,6 @@ if (process.env.NODE_ENV !== 'production') {
   middleware.push(createLogger())
 }
 
-// const store = createStore(
-//   reducer,
-//   applyMiddleware(...middleware)
-// )
-
 /* use redux devTool */
 const store = createStore(
     reducer,
